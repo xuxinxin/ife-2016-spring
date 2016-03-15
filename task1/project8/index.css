@@ -6,7 +6,7 @@ html,body{
 .wrap{
 	box-sizing: border-box;
 	width: 100%;
-	padding-right: 20px;
+	padding: 10px 10px 0 10px;
 }
 
 .wrap:before,
@@ -22,8 +22,7 @@ html,body{
 	background: #eee;
 	height: 50px;
 	float: left;
-	margin-top: 20px;
-	margin-left: 20px;
+	margin: 10px;
 }
 
 @media (min-width: 769px){
