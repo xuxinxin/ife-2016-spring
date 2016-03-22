@@ -79,12 +79,14 @@
 				var divDom2 = document.createElement('div');
 
 				divDom1.style.height = data[index1-1] + "%";
+				divDom1.title = data[index1-1];
 				this.els.display.removeChild(this.els.items[index1]);
 				this.els.display.insertBefore(divDom1,this.els.items[index1]);
 				
 				
 
 				divDom2.style.height = data[index2-1] + "%";
+				divDom2.title = data[index2-1];
 				this.els.display.removeChild(this.els.items[index2]);
 				this.els.display.insertBefore(divDom2,this.els.items[index2] || null);
 							
@@ -173,7 +175,7 @@
 	els.sort.addEventListener('click', sortHandle);
 	els.display.addEventListener('click', itemHandle);
 
-	
+
     // 初始化data
     for(var i=0; i<15; i++){
     	var value = Math.floor(Math.random()*90)+10;
